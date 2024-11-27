@@ -31,16 +31,18 @@ This is a configuration for ThinkPad E480 to boot macOS Ventura. To boot other v
 |--|--|
 | AirDrop and other continuity features | Not Working<sup>[1]</sup> |
 | iCloud | Not Working<sup>[2]</sup> |
-| Hotkeys for brightness, volume, etc. | Partially Working <sup>[3]</sup> |
-| Battery remaining percentage display | Partially Working <sup>[4]</sup> |
+| Hotkeys for brightness, volume, etc. | Partially Working<sup>[3]</sup> |
+| Battery remaining percentage display | Partially Working<sup>[4]</sup> |
 
 [1] This can be fixed by using `AirportItlwm.kext`. If you do not have the need to connect to a hidden network, do that.
 
 [2] Should be very easily fixed with tons of tutorials online. I am lazy so it remains broken.
 
-[3] This seems to be a universal problem faced by everyone who has attempted to boot macOS on the E480. After the computer wakes up from sleep, the `FnLock` is permanently enabled until the next reboot, which means you can't use the hotkeys to conveniently adjust brightness, volume, etc.
+[3] This seems to be a universal problem faced by everyone who has attempted to boot macOS on the E480. After the computer wakes up from sleep, the `FnLock` is permanently enabled until the next reboot, which means you can no longer use the hotkeys to conveniently adjust brightness, volume, etc.
 
 [4] Another universal problem that's yet to be solved. After waking up from sleep, if the state of battery charging is changed since the last state when the computer is awake (e.g. you plug in and start charging the computer, or unplugging the previously plugged in charger prior to waking up from sleep), the battery icon would still display the previous state instead of what it's doing currently. This can be fixed by manually putting the computer to sleep and waking it up once again.
 
+# First Boot
+Fill in `PlatformInfo` entries in `config.plist` accordingly. The `SMBIOS` is `MacBookPro14,1`.
 
 
