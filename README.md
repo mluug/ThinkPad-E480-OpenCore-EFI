@@ -42,7 +42,7 @@ This is a configuration for ThinkPad E480 to boot macOS Ventura. To boot other v
 
 [4] Another universal problem that's yet to be solved. After waking up from sleep, if the state of battery charging is changed since the last state when the computer is awake (e.g. you plug in and start charging the computer, or unplugging the previously plugged in charger prior to waking up from sleep), the battery icon would still display the previous state instead of what it's doing currently. This can be fixed by manually putting the computer to sleep and waking it up once again.
 
-# First Boot
+# Before the First Boot
 Fill in `PlatformInfo` entries in `config.plist` accordingly. The `SMBIOS` is `MacBookPro14,1`.
 
 
